@@ -1,0 +1,27 @@
+Ansible installation
+---------------------
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible -y
+ansible --version
+
+python3 --version  (other os )
+sudo apt install python3-pip
+python3 -m pip install --user ansible
+
+
+sudo nano /etc/ssh/sshd_config
+
+# Change PasswordAuthentication to yes
+sudo systemctl restart sshd
+sudo adduser username
+
+sudo visudo
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+prajwalram ALL=(ALL:ALL) NOPASSWD:ALL
+
+
